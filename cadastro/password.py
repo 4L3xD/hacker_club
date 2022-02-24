@@ -1,4 +1,5 @@
 from approved_pass import Approved
+from caesar_cipher import Caesar
 
 class Password():
   def __init__(self):
@@ -12,12 +13,15 @@ class Password():
       
       # Reverse Cipher
       # http://inventwithpython.com/hacking (BSD Licensed)
-    translated = ''
+
+    #translated = ''
   
-    i = len(self.senha) - 1
+    #i = len(self.senha) - 1
+
+    #while i >= 0:
+    #    translated = translated + self.senha[i]
+    #    i = i - 1 #decrementação/subtração
+
+    self.senha = Caesar(self.senha).cripto()
   
-    while i >= 0:
-        translated = translated + self.senha[i]
-        i = i - 1 #decrementação/subtração
-  
-    return translated
+    return self.senha
