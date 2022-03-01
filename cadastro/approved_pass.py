@@ -5,9 +5,9 @@ class Approved():
     def __init__(self):
       pass
   
-    def test_password(self):
-        print("A senha deve ter mais de 8 digitos, e alem disso conter, no minimo, uma letra minuscula, uma letra maiuscula e um numero.")
-        password = getpass.getpass('Digite tua senha: ')
+    def test_password(self, senha):
+        print("A senha deve ter mais de 10 digitos, e alem disso conter, no minimo, uma letra minuscula, uma letra maiuscula e um numero.")
+        password = senha #getpass.getpass('Digite tua senha: ')
   
         minimal_number = 2
         minimal_upper_char = 2
@@ -45,4 +45,6 @@ class Approved():
         if esp == True and num == True and low == True and up == True and tam == True:
           print("Ta-dã! senha valida!")
           return password
+
+        #yield 'Senha não validada!' 
           
