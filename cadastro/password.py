@@ -1,5 +1,5 @@
-from approved_pass import Approved
-from caesar_cipher import Caesar
+from approvedPass import Approved
+from caesarCipher import Caesar
 
 class Password():
   def __init__(self):

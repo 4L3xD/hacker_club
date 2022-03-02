@@ -1,7 +1,7 @@
 #https://docs.python.org/pt-br/3/library/unittest.html#test-discovery
 
 import unittest
-from approved_pass import Approved
+from approvedPass import Approved
 
 class ApprovedPassTests(unittest.TestCase):
     def test_YouShouldNotPass(self):
